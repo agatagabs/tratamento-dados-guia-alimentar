@@ -1,6 +1,6 @@
 from tika import parser
 
-raw = parser.from_file("guia_alimentar_populacao_brasileira_2ed.pdf")
+raw = parser.from_file(filename="guia_alimentar_populacao_brasileira_2ed.pdf", service='text')
 raw = str(raw)
 
 safe_text = raw.encode('utf-8-sig', errors='ignore').decode('ascii', 'ignore')
