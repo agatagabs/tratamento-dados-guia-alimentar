@@ -1,5 +1,7 @@
+import re
+
 def removeSetenceRepeat(text):
-    arrayString = text.split()
+    arrayString = re.split(' |, |\n', text)
     
     for string in arrayString:
         numberOfRepeats = arrayString.count(string)
@@ -9,5 +11,20 @@ def removeSetenceRepeat(text):
 
     return arrayString
             
-# text = 'Batata Batata Batata Batata'
-# print(removeSetenceRepeat(text))
+# file = open(file='Output.txt', mode='r', encoding='utf-8-sig')
+# text = file.read()
+# textFilter = removeSetenceRepeat(text)
+
+# WordsRepeats = {}
+# for string in textFilter:
+#     repeats = textFilter.count(string)
+#     if repeats > 1:
+#         try:
+#             WordsRepeats[string] = repeats
+#         except:
+#             pass
+
+# print('\nWords Repeats:')
+
+# for string in WordsRepeats:
+#     print('{}: {}'.format(string, WordsRepeats[string])) 
