@@ -2,7 +2,7 @@ def separandoFrases(texto):
     a = 0
     texto_separado = []
     for i in range(len(texto)):
-        if(texto[i] == "!" or texto[i] == ";" or texto[i] == "." or texto[i] == "?"):
+        if not (texto[i].isalnum() or " "):
             texto_separado.append(texto[a:i] + " /n")
             a = i + 1
             
