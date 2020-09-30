@@ -7,5 +7,3 @@ def spellingCorrector(text):
     for word in arrayString:
         spellCorrect.append(spell.correction(word))
     return spellCorrect
-
-# print(spellingCorrector('arroz, batta, leteiro'))
