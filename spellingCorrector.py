@@ -1,3 +1,5 @@
+#intall library pyspellchecker with pip install pyspellchecker
+
 from spellchecker import SpellChecker
 
 def spellingCorrector(text):
