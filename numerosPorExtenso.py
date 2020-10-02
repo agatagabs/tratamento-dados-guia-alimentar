@@ -12,3 +12,6 @@ def numerow(texto):
         texto[texto.index(item)] = word1
     texto = " ".join(texto)
     return texto
+
+if __name__ == "__main__":
+    print('oi')
