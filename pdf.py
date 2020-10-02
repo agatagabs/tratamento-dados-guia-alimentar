@@ -1,7 +1,11 @@
 from tika import parser
 
+<<<<<<< HEAD
 raw = parser.from_file("guia_alimentar_populacao_brasileira_2ed.pdf")
 print(raw.__dict__)
+=======
+raw = parser.from_file(filename="guia_alimentar_populacao_brasileira_2ed.pdf", service='text')
+>>>>>>> 82d40541d253280bc5789610e1d104ce3503e518
 raw = str(raw)
 
 safe_text = raw.encode('utf-8-sig', errors='ignore').decode('ascii', 'ignore')
