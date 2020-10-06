@@ -1,11 +1,16 @@
-#intall library pyspellchecker with pip install pyspellchecker
 
 from spellchecker import SpellChecker
+import re 
+spell = SpellChecker(language='pt')
 
 def spellingCorrector(text):
+    string = text
     spell = SpellChecker(language='pt')
     arrayString = spell.split_words(text)
-    spellCorrect = []
     for word in arrayString:
-        spellCorrect.append(spell.correction(word))
-    return spellCorrect
+        try:
+            correcao = spell.correction(word)
+            string = string.replace(word, correcao)
+        except Exception as e:
+            print('spelling corrector error:', e)
+    return string
