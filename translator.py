@@ -8,5 +8,5 @@ def translator(text):
     textSplit = spell.split_words(text)
     for word in textSplit:
         wordTranslated = translator.translate(word, dest='pt')
-        text.replace(word, wordTranslated.text)
+        text = text.replace(word, wordTranslated.text)
     return text
