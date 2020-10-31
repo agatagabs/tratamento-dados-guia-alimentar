@@ -4,6 +4,9 @@ from spellingCorrector import spellingCorrector
 from separacaoFrases import separandoFrases
 from removeWordRepeat import removeWordRepeat
 from tirandoOsAcento import tirandoAcento
+from numerosPorExtenso import numerow
+from transformOrdinalNumberInOrdinalText import transformOrdinalNumberInOrdinalText
+from translator import traduzindo
 raw = parser.from_file(filename="guia_alimentar_populacao_brasileira_2ed.pdf", service='text')
 raw = str(raw)
 
@@ -13,9 +16,11 @@ safe_text = str(raw).replace("\\", "").replace("\n", "\\n").replace('nnn', '').r
 safe_text = spellingCorrector(safe_text)
 safe_list = separandoFrases(safe_text)
 for frase in safe_list:
-    print(frase)
     frase = removeWordRepeat(str(frase))
     frase = tirandoAcento(str(frase))
+    frase = numerow(str(frase))
+    frase = transformOrdinalNumberInOrdinalText(str(frase))
+    frase = traduzindo(str(frase))
 
 #print('--- safe text ---' )
 #print(safe_text)

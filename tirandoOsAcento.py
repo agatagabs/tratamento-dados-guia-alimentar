@@ -1,5 +1,6 @@
 import unidecode
 
 def tirandoAcento(texto):
-    novoTexto = unidecode.unidecode(texto)
-    return novoTexto
+    for word in texto:
+        novoTexto = unidecode.unidecode(word)
+        return novoTexto

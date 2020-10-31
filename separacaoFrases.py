@@ -7,8 +7,3 @@ def separandoFrases(texto):
             a = i + 1
             
     return texto_separado
-
-if __name__ == "__main__":
-    txt = "cachorro gato. pao com açucar? cao? gato? eu quero um cachroro e um gato; mas eu nao sei onde eu quero isso de verdade."
-
-    print(separandoFrases(txt))

@@ -4,13 +4,15 @@ import re
 spell = SpellChecker(language='pt')
 
 def spellingCorrector(text):
-    string = text
-    spell = SpellChecker(language='pt')
-    arrayString = spell.split_words(text)
-    for word in arrayString:
-        try:
-            correcao = spell.correction(word)
-            string = string.replace(word, correcao)
-        except Exception as e:
-            print('spelling corrector error:', e)
-    return string
+    for word in text:
+        string = text
+        spell = SpellChecker(language='pt')
+        arrayString = spell.split_words(text)
+        for word in arrayString:
+            try:
+                correcao = spell.correction(word)
+                string = string.replace(word, correcao)
+            except Exception as e:
+                print('spelling corrector error:', e)
+        return string
+
