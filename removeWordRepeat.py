@@ -18,3 +18,4 @@ def removeWordRepeat(text):
                 arrayString.remove(string)
 
     return arrayString
+

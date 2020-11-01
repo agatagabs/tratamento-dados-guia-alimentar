@@ -17,10 +17,10 @@ safe_text = spellingCorrector(safe_text)
 safe_list = separandoFrases(safe_text)
 for frase in safe_list:
     frase = removeWordRepeat(str(frase))
-    frase = tirandoAcento(str(frase))
     frase = numerow(str(frase))
     frase = transformOrdinalNumberInOrdinalText(str(frase))
     frase = traduzindo(str(frase))
+    frase = tirandoAcento(str(frase))
 
 #print('--- safe text ---' )
 #print(safe_text)

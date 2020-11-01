@@ -7,3 +7,5 @@ def separandoFrases(texto):
             a = i + 1
             
     return texto_separado
+
+

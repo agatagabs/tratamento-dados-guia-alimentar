@@ -7,7 +7,7 @@ def spellingCorrector(text):
     for word in text:
         string = text
         spell = SpellChecker(language='pt')
-        arrayString = spell.split_words(text)
+        arrayString = text.split()
         for word in arrayString:
             try:
                 correcao = spell.correction(word)
@@ -15,4 +15,3 @@ def spellingCorrector(text):
             except Exception as e:
                 print('spelling corrector error:', e)
         return string
-
