@@ -7,4 +7,6 @@ def traduzindo(text):
     for word in textSplit:
         wordTranslated = translator.translate(word, dest='pt')
         text = text.replace(word, wordTranslated.text)
-    return text + ' \n'
+    return text 
+
+

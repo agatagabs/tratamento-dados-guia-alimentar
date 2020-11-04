@@ -7,7 +7,7 @@ from tirandoOsAcento import tirandoAcento
 from numerosPorExtenso import numerow
 from transformOrdinalNumberInOrdinalText import transformOrdinalNumberInOrdinalText
 from translator import traduzindo
-raw = parser.from_file(filename="capitulo1.pdf", service='text')
+raw = parser.from_file(filename="guia_alimentar_populacao_brasileira_2ed.pdf", service='text')
 raw = str(raw)
 
 safe_text = raw.encode('utf-8-sig', errors='ignore').decode('ascii', 'ignore')
@@ -19,12 +19,11 @@ for frase in safe_list:
     frase = removeWordRepeat(str(frase))
     frase = numerow(str(frase))
     frase = transformOrdinalNumberInOrdinalText(str(frase))
-    frase = traduzindo(str(frase))
     frase = tirandoAcento(str(frase))
 
 #print('--- safe text ---' )
 #print(safe_text)
-text_file = open("Output.txt", "w", encoding='utf-8-sig')
+text_file = open("output1.txt", "w", encoding='utf-8-sig')
 
 for item in safe_list:
     text_file.write("%s" % item)
