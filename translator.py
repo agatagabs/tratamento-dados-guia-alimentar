@@ -1,12 +1,12 @@
 #pip install googletrans
 from spellchecker import SpellChecker
-from googletrans import Translator
+from google.cloud import translate_v2 as translate
+
 def traduzindo(text):
-    translator = Translator()
+    translator = translate.Client()
     textSplit = SpellChecker().split_words(text)
     for word in textSplit:
-        wordTranslated = translator.translate(word, dest='pt')
-        text = text.replace(word, wordTranslated.text)
+        if translator.detect_language(word)["language"] == 'en':
+            wordTranslated = translator.translate(word, target_language='pt')
+            text = text.replace(word, wordTranslated["translatedText"])
     return text 
-
-

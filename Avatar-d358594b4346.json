@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "estoque-sim-sa",
+  "private_key_id": "d358594b43468b93255070e99317cfe3b5cbf58e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtRgDIWbo9beTm\nX1vhGluJstx6TCNxq/55BqD0YsO1QPQmdoK7t/UEs4cx2vr6OYW6nGGp3j+dYbTG\nn/JsfRCWsXIsQ3R20KfxTjY6rLuyL6+9RfNYMnyVT2GKIQNf5kIm49WheTqvzMoy\n4dqxEi2oxSsMtSfs+FV+3Xt0VfCfBIAA451PSTGmeY/MBdOI7OtcBqxPki7W+cW0\n5DwTibbaSYZFo7AXi6xyyE6kBxSKy/vqEAlllOWY69q2POOTeCaQ8jJ9bDTe9x4e\nDlCISm+U9DaNzo8Nc2x662DrxjKIN8R14Ak83+FagjOwsaNHLX2oxKszAFonRGOk\nQvl/iX3PAgMBAAECggEAR5wvxJ14n9ykBiWQ5lYrUJxQDGcdGuR3NfNsX7PVqDog\n7Sh7XTNomrnLfOpAYVuWjgoFPtvwNI3l1VTTLsz9JxpM0khKgLQ5RDwLo3Ix3DFj\nEvku2dt7q4V0DU8Zgu+5lTMB3kso2vDq+95lsFqP7jkWUpkn2ALF6rmERQ8jc8QN\nQFfBYHXbPIXCgQaU97Yq5AQXaoOcrctQEKMonludNWjCEtOqMx7q2MipqqQnXC0N\nJapyHberRRsg/+7jF5Bv/rfx0h4IfnMhNtrArD7h3KhdBiH2awZoLXz/vedCOVKY\nyI4CZ4t3rS0ZAG6gH4Zl2KKELUZmdSXXA73at6HhcQKBgQDTctNatEFAXjUNro0W\n7bj4cpNOOIFJRI9rPjbTzoHa6+rpY7CVCCF1YEn/yjafmDJSma+AtBcOzR58cLuN\nScDME9XggHeHN5XobJQF2n9fI7sUSmlNTADU9jIQ2yIi9JckSnzQmA7CiMoczt7S\nRH8dDL5KojS8Kx3mruQipz251wKBgQDRyBQBdlZUGyBO0pggQMbod01lV+K7kva2\nfG5tk56eRJHTwPmbta3aG55y9ofDeptP+C/XOeahZV6+hvzjyRUqgDYb4safrfsH\nwg5scy2Fl2Cu0LCECAGkTsC67Vkd7agl8qHF7rPFS7vK8473ekJs+0HPurVVHc4c\n6ft84PeMyQKBgHZqUc70L666k3+MB1uV2gbZM4GUx2Ke0KrAdrf7aGGPyUjXGWb8\n3K/9MrPbLOgHtfboNo8fS+JwIOiTwZUIfr5LRXWqvEWvbXZyiBsXGEnRms1sNrih\nHb4l+jfSYLWuwI4EYQ34ehubu4SSndqnnYBJSLBHUr0mcGJmA0Ec48aVAoGBAK7T\nuGBzl4RmSumFtkQC2AG6EyUnNgyucK8qSflF8gXiDUnU4/BxW16Ob+FNNV2imzbt\nFime1mahDXFpG+5VkS8nRHC+8Fr46mDPx6d34XMY8fkecEzIQ14ER7hAv2kiu2RM\nrac/xE/jSrDbg8UY/azHRFRzPFWgDjqogO7UqVmJAoGAOCMysGHFzK5f2wVzOoB8\nykNGMNQgG/+eNxz0clyv8IXKDHu2TFqOU0CFaxkXqse0eHP16Qmfe85y1RdVJvDs\nqdO00nyJvEpv2DMzNpZDYNnm7stzTfcL5EHAuX0vVnneVE2EuJhvMDtL1BMpb/vj\nS4ApxlPkeisp67p2BwyRoU4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "guiaalimentar@estoque-sim-sa.iam.gserviceaccount.com",
+  "client_id": "106667654530233739452",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/guiaalimentar%40estoque-sim-sa.iam.gserviceaccount.com"
+}

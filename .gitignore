@@ -1,4 +1,4 @@
-.vscode/settings.json
+.vscode/*
 *.txt
 __pycache__
 olha_pq_e_ruim.py
