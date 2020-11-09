@@ -9,17 +9,16 @@ from transformOrdinalNumberInOrdinalText import transformOrdinalNumberInOrdinalT
 from translator import traduzindo
 
 if __name__ == "__main__":
-    f = "guia_alimentar_populacao_brasileira_2ed.pdf"
-    #f="capitulo1.pdf"
-    raw = parser.from_file(filename=f, service='text')
-    raw = str(raw)
-    safe_text = raw
+    f = "output-2.txt"
+    safe_text = open(f, 'rb').read()
+    print(str(safe_text.encode('utf-8')))
     #safe_text = raw.encode('utf-8-sig', errors='ignore').decode('ascii', 'ignore')
 
     safe_text = str(safe_text)
     safe_text = spellingCorrector(safe_text)
     safe_list = separandoFrases(safe_text)
     for frase in safe_list:
+        print(frase)
         frase = removeWordRepeat(str(frase))
         frase = numerow(str(frase))
         frase = transformOrdinalNumberInOrdinalText(str(frase))
@@ -28,7 +27,7 @@ if __name__ == "__main__":
 
     #print('--- safe text ---' )
     #print(safe_text)
-    text_file = open("output1.txt", "w", encoding='utf-8-sig')
+    text_file = open("output1.txt", "w")
 
     for item in safe_list:
         text_file.write("%s" % item)
