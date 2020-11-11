@@ -14,7 +14,7 @@ if __name__ == "__main__":
     raw = parser.from_file(filename=f, service='text')
     raw = str(raw)
     safe_text = raw
-    #safe_text = raw.encode('utf-8-sig', errors='ignore').decode('ascii', 'ignore')
+    safe_text = raw.encode('utf-8-sig', errors='ignore').decode('ascii', 'ignore')
 
     safe_text = str(safe_text)
     safe_text = spellingCorrector(safe_text)

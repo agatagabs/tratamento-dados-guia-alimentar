@@ -6,5 +6,4 @@ def tirandoAcento(frase):
     for word in arrayString:
         if "/n" not in word: 
             word = unidecode.unidecode(word)
-    
     return " ".join(arrayString)
