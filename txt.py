@@ -20,7 +20,7 @@ if __name__ == "__main__":
         frase = removeWordRepeat(str(frase))
         frase = numerow(str(frase))
         frase = transformOrdinalNumberInOrdinalText(str(frase))
-
+        frase = traduzindo(str(frase))
     text_file = open("outputdoTxt.txt", "w", encoding= "utf-8")
 
     for item in safe_list:
