@@ -5,15 +5,18 @@ from removeWordRepeat import removeWordRepeat
 from tirandoOsAcento import tirandoAcento
 from numerosPorExtenso import numerow
 from transformOrdinalNumberInOrdinalText import transformOrdinalNumberInOrdinalText
-from translator import traduzindo
+#from translator import traduzindo
 
 if __name__ == "__main__":
     ref_arquivo = open("pedaço.txt","r", encoding='utf-8')
     safetext = []
     for row in ref_arquivo:
-        safetext.append(str(row))
-    safetext = "".join(safetext)
-
+        listafrase = row.split()
+        if "/n" in listafrase:
+            listafrase.remove("/n")
+        frase = " ".join(listafrase)
+        safetext.append(str(frase))
+    safetext = " ".join(safetext)
     safetext = spellingCorrector(safetext)
     safe_list = separandoFrases(safetext)
     for frase in safe_list:
